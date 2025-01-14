@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #064155;
+}
+
+* {
+    font-family: "Jost", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /*transition: 2s linear ;(Para fazer uma transicao logo que o site abrir)*/
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit.scrollbar {
+    width: .8rem;
+}
+
+html::-webkit.scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit.scrollbar-thumb{
+    background: #00BABC
+    border-radius: 5rem;
+}
+
+body{
+    background-color: black;
+}
+
+.header {
+    background-color: #00BABC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.btn_default {
+    background-color: rgb(248, 249, 250);
+    color: rgb(12, 11, 11);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px #064155;
+
+}
+
+.btn_default:hover{
+    background-color: rgb(245, 248, 248);
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: rgb(8, 8, 8);
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 110%; right: 1%;
+    background:#064155;
+    width: 30rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--main-color);
+}
+
+.header .search-form label:hover{
+    color: var(--main-color);
+}
