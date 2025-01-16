@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,14 @@
     <!--Icons-->
 
     <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/topo.css">
+    <link rel="stylesheet" href="src/styles/especialidades.css">
+    <link rel="stylesheet" href="src/styles/about.css">
+    <link rel="stylesheet" href="src/styles/portfol.css">
+    <link rel="stylesheet" href="src/styles/form.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -24,23 +32,23 @@
             <nav class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contacto">
                 <a href="#">
-                    <button>Entre em contacto!</button>
+                    <button>INSCREVA-SE</button>
                 </a>
             </div>
         </div>
     </header>
 
-    <main>
+    <main id="content">
         <section class="topo-do-site">
+            <div class="shape"></div>
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -48,14 +56,23 @@
                             DESCUBRA O FUTURO DA TECNOLOGIA NA
                             <span>42LUANDA</span>
                         </h1>
+
                         <p>uma escola inovadora de programação, gratuita e acessível para todos, onde você 
                         aprende no seu ritmo e transforma desafios em conquistas!</p>
                         
-                        <div class="btn-contacto">
-                            <a href="#">
-                                <button>Entre em contacto</button>
+                        <div class="btn-contact">
+                            <a href="#" class="btn_default">
+                                SABER MAIS
+                                <!-- <button>Entre em contacto</button> -->
+                            </a>
+                            <a href="#" class="btn">
+                                <i class="fa-solid fa-phone"></i>
+                                +2449384974874
+                                <!-- <button>Entre em contacto</button> -->
                             </a>
                         </div>
+
+                        
                     </div>
                     <div class="img-topo-site">
                             <img src="src/images/homem-e-mulher.jpg" alt="42" width="800px" >
@@ -74,20 +91,19 @@
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="src/images/women.jpg" alt="" width="500px">
+                        <img src="src/images/happycouple.jpg" alt="" width="800px">
                     </div>
                     
                     <div class="txt-sobre">
-                        <h2> SOBRE NOS...</h2>
-                        <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy 
-                            text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type 
-                            specimen book</P>
+                        <h2> SOBRE NÓS</h2>
+                        <P>A 42 Luanda é uma instituição inovadora de ensino de programação que se destaca pelo método pedagógico disruptivo, baseado em projetos, colaboração e aprendizado prático. 
+                            Sem professores, aulas tradicionais ou custos de inscrição, oferecemos uma experiência transformadora que prepara 
+                            nossos alunos para os desafios do mercado de trabalho global na área de tecnologia</P>
 
-                            <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer .</P>
+                            <P>Nosso objetivo é capacitar jovens angolanos e talentos de todas as idades, 
+                                promovendo o desenvolvimento de habilidades técnicas e comportamentais, como criatividade, resiliência e trabalho em equipe. 
+                                Na 42 Luanda, acreditamos no potencial de cada pessoa para superar limites e construir o futuro. 
+                                Juntos, estamos moldando as mentes que vão liderar a inovação em Angola e no mundo. .</P>
                             
                                  <div class="btn-social">
                                     <a href="#"><button><i class="fa-brands fa-instagram"></i></button></a>
@@ -105,7 +121,7 @@
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="fa-solid fa-code"></i>
-                        <h3>WEBSITE</h3>
+                        <h3>NEWS 1</h3>
                         <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book</P>
@@ -113,7 +129,7 @@
 
                     <div class="especialidades-box">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <h3>WEBSITE</h3>
+                        <h3>NEWS 2</h3>
                         <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book</P>
@@ -121,7 +137,7 @@
 
                     <div class="especialidades-box">
                         <i class="fa-solid fa-code"></i>
-                        <h3>WEBSITE</h3>
+                        <h3>NEWS 3</h3>
                         <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book</P>
@@ -133,7 +149,7 @@
 
         <section class="portfolio">
             <div class="interface">
-                <h2 class="titulo">Minhas <span>especialidades</span></h2>
+                <h2 class="titulo">NOSSOS <span> PARCEIROS</span></h2>
                 <div class="flex">
                     <div class="img-port" style="background-image: url(src/images/Travel\ Agency\ -\ Landing\ Page\ Design.jpeg);">
                         <div class="overlay">Projecto1</div>

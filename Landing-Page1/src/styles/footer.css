@@ -1,0 +1,37 @@
+
+footer{
+    padding: 40px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #080808;
+}
+
+footer .btn-social button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+footer .line-footer p i{
+    color: #00BABC;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: rgb(2, 2, 2);
+}
